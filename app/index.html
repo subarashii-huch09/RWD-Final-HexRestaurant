@@ -1,0 +1,140 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- features begin -->
+<section class="features">
+  <h3 class="features__header text-center">
+    客人總是在詢問 <br>
+    這麼好吃的秘訣是什麼
+  </h3>
+  <ul class="features__list d-flex justify-content-between">
+    <li class ="features__list--item">
+      <img class =" features-image"  src="assets/images/feature_1.png" alt="">
+      <div class =" rwd">
+      <h5 class ="text-center">台灣本土蔬菜</h5>
+      <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p></div>
+    </li>
+
+    <li class ="features__list--item">
+      <img class ="features-image"  src="assets/images/feature_2.png" alt="">
+      <div class =" rwd"">
+      <h5 class ="text-center">專業米其林廚師</h5>
+      <p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p></div>
+    </li>
+
+    <li class ="features__list--item">
+      <img class ="features-image" src="assets/images/feature_3.png" alt="">
+      <div class =" rwd">
+      <h5 class ="text-center">對於專業不能退讓</h5>
+      <p >Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p></div>
+    </li>
+  </ul>
+</section>
+<!-- features end -->
+
+
+
+
+<!-- chef begins -->
+<section class="chef d-flex justify-content-center align-items-center">
+<img src="assets/images/main_chef_brown.png" alt="" class="chef__image">
+<div class="cheft__info">
+  <h3 class="chef__info--title">今日主廚：帕金森、梅在帕</h3>
+  <h4 class="chef__info--engTitle">Tody Chef: Plum in Shock</h4>
+  <p class="chef__info--detail">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+</div>
+
+</section>
+<!-- chef ends -->
+
+
+
+<!-- reviews begin -->
+<section class="reviews">
+  <h3 class="reviews__title text-center">聽聽別人的感想</h3>
+  <ul class="reviews__list d-flex justify-content-center">
+    <li class="reviews__list--items d-flex align-items-start">
+      <img src="assets/images/avatar_1.png" alt="">
+      <div class="comment">
+      <h4 class = "comment__name text-start">高雄一口吃</h4>
+      <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+      <p class ="text-end"> -- 產品經理</p>
+      </div>
+    </li>
+
+    <li class="reviews__list--items d-flex">
+      <img src="assets/images/avatar_2.png" alt="">
+      <div class="comment">
+      <h4 class ="comment__name text-start">廟口小霸王</h4>
+      <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+      <p class="text-end"> -- 金身道士</p>
+      </div>
+    </li>
+
+    <li class="reviews__list--items d-flex">
+      <img src="assets/images/avatar_3.png" alt="">
+      <div class="comment">
+      <h4 class ="comment__name text-start">春天也來了</h4>
+      <p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+      <p class="text-end"> -- 美麗萬分</p>
+      </div>
+    </li>
+  </ul>
+</section>
+<!-- reviews end -->
+
+
+<!-- location begins -->
+<section class="location">
+  <div class="location__title text-center pb-5">
+    我們的位置不太夠坐<br>
+    要不要先定位呢？
+  </div>
+  <div class="location__info d-flex justify-content-between">
+    <iframe class ="location__map" loading="lazy" frameborder="0" style="border:0;" allowfullscreen="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.868441584466!2d174.73324631547442!3d-36.845626687037814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4783a1dcc8e3%3A0xf2113925ac2e76cc!2sThe%20Butcher&#39;s%20Son!5e0!3m2!1sen!2snz!4v1635516691021!5m2!1sen!2snz" ></iframe>
+    
+    <form class ="location__form" action="index.html">
+      <div class="input-group">
+        <label for="name">姓名</label>
+        <input id ="name" type="text" placeholder="六角講師吃尾牙">
+      </div>
+
+      <div class="input-group">
+        <label for="phone">電話</label>
+        <input id ="phone"type="tel" placeholder="02-1234567">
+      </div>
+
+      <div class="input-group">
+        <label for="email">信箱</label>
+        <input id ="email" type="email" placeholder="test@gmail.com">
+      </div>
+
+      <div class="input-group">
+        <label for="people">人數</label>
+        <input id ="people" type="num">
+      </div>
+      
+      <p class= "pb-2">是否需要素食</p>
+
+      <div class=" radio  input-group">
+        <label for="yes">是</label>
+        <input  id ="yes" type="radio" name="vegetarian"value="yes" checked>
+
+        <label for="no">否</label>
+        <input id ="no" type="radio" name="vegetarian" value="no">
+      </div>
+
+      <div class="button-group pt-3 text-end">
+        <input class="btn btn-secondary me-3 text-white hvr-fade" type="reset" value="取消"/>
+        <input class="btn btn-warning text-white hvr-fade" type="submit" value="送出"/>
+      </div>
+
+    </form>
+
+    
+  </div>
+</section>
+<!-- location ends -->

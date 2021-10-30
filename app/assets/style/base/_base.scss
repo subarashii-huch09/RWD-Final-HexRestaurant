@@ -1,0 +1,18 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MicrosoftJhengHeiRegular", "Microsoft JhengHei", "PingFang TC" ,"Roboto", "Noto Sans TC",  sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display:block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

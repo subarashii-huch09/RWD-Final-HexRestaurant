@@ -1,0 +1,39 @@
+---
+title: 登入
+layout: ./app/layout.ejs
+engine: ejs
+current: login
+---
+<section class ="login__page">
+  
+  <h2 class="login__page--title fw-bold text-center ">六角西餐廳</h2>
+  <h3 class="login__page--subTitle text-center ">享受美食好味道</h3>
+
+  
+  <div class="login__card">
+    
+    <form class= "login__form" action ="login.html">
+      <h4 class="login__cardTitle text-center fw-bold">LOGIN</h4>
+      <div class="mb-3 email">
+      <label for="InputEmail1" class="form-label">Email address *</label>
+      <i class="far fa-envelope"></i>
+      <input type="email" class="form-control" id="InputEmail1">
+      </div>
+
+      <div class="mb-3 password ">
+      <label for="InputPassword1" class="form-label">Password *</label>
+      <i class="fas fa-lock"></i>
+      <input type="password" class="form-control" id="InputPassword1" placeholder="輸入密碼">
+      </div>
+
+      <a class="mb-4 login__form--forget-pwd" href="login.html">忘記密碼？</a>
+
+      <ul class="login__form--buttons d-flex list-unstyled justify-content-around text-center">
+        <li><a class="btn btn-secondary " href="signup.html">註冊</a></li>
+        <li><input class="btn btn-submit hvr-fade" type="submit" value="登入"></li>
+      </ul>
+    </form>
+  </div>
+  
+</section>
+

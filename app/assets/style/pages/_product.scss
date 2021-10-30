@@ -1,0 +1,58 @@
+.product {
+  padding: 50px;
+  background-color: $secondary-color;
+  color: $primary-color;
+  
+  a {
+    color: $primary-color;
+  }
+}
+
+.main-products {
+  width: 70%;
+  outline: 1px solid green;
+}
+
+.sidebar {
+  line-height: 32px;
+  width: 25%;
+  outline: 1px solid blue;
+
+  &__title {
+    font-size: $text-lg;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    width: 220px;
+     
+    &--item {
+    border-bottom: 1px solid $primary-color;
+    }
+  }
+
+  &__link {
+    padding-left: 10px;
+    &:hover {
+      color: $light-color;
+      background: $primary-color;
+    }
+}
+} 
+
+.search {
+  &__input {
+  width: 460px;
+  
+  }
+
+  &__submit {
+    width: 36px;
+    height: 28px;
+    
+  }
+}
+
+
+
+

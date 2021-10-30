@@ -1,0 +1,145 @@
+.footer {
+  background-color: $secondary-color;
+  padding: 50px 15px;
+  color: $primary-color;
+
+  .footer-title {
+    font-size: $text-xl;
+    margin-bottom: 16px;
+  }
+
+  .footer__detail--about{
+    width: 40%;
+    margin-right: 35px;
+  }
+
+  .footer__detail--contact {
+    width: 30%;
+      ul {
+    list-style-type: disc;
+    text-indent: -3%;
+        li {
+          padding: 5px;
+        }
+        a {
+          color: $primary-color;
+        &:hover {
+          color: maroon;
+          }
+        }
+      }
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    .logo {
+    margin-bottom: 20px;
+    @include img-replace-text ("../images/logo_l(null).svg", 245px, 45px )
+    }
+  }
+
+
+  .social__list--item{
+    margin-left: 20px;
+    font-size: $text-lg;
+  }
+
+  .fa-google-plus-square {
+    color: $google-color;
+  }
+
+  .fa-twitter-square {
+    color: $twitter-color;
+  }
+
+  .fa-facebook-square {
+    color:$facebook-color;
+  }
+
+  .copyright {
+    font-size: $text-sm;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  @include tablet {
+    padding: 30px;
+    .detailContainer{
+      flex-direction: column;
+      flex-wrap:wrap;
+    }
+
+    .footer__detail {
+      width: 95%;
+      justify-content: space-between;
+      margin-bottom: 35px;
+
+      &--about {
+        width: 60%;
+      }
+      &--contact {
+        width: 35%;
+      }
+
+    }
+
+    .footer-info {
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+  @include mobile {
+    padding: 30px 15px;
+    .footer__detail {
+      margin-bottom: 5px;
+      &--about {
+        width: 80%;
+      }
+      &--contact {
+      width: 100%;
+      text-align: center;
+      ul {
+      list-style: none;
+      }
+    }
+    }
+    
+    .footer-info {
+      justify-content: space-between;
+      margin: 10px 0 ;
+
+      .logo {
+        margin: 0 30px;
+      }
+    }
+
+    .social__list {
+      max-width: 250px;
+      margin: 0 auto;
+      &--item {
+        padding: 10px;
+        
+      }
+      i {
+      font-size: $text-xxxl;
+      }
+    }
+
+    .copyright {
+      padding: 0;
+      margin: 0;
+      font-size: $text-xs;
+    }
+  }
+}
+
+

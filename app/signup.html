@@ -1,0 +1,44 @@
+---
+title: 註冊
+layout: ./app/layout.ejs
+engine: ejs
+current: signup
+---
+<section class="signup__page">
+  <h2 class="signup__page--title fw-fold text-center">六角西餐廳</h2>
+  <h3 class="signup__page--subTitle text-center">享受美食好味道</h3>
+
+    <form class="signup__form" action="signup.html">
+        <h4 class ="signup__formTitle fw-bold text-center">Create Account</h4>
+        <div class ="signup__info d-flex justify-content-between align-items-start">
+          <div class="signup__info--TermsConditions">
+            <h5>就是這樣條款：</h5>
+            <p>
+                Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien...
+            </p>
+          </div>
+
+          <div class="signup__info--detail d-flex flex-column ">
+            <div class="mb-3 email">
+            <label for="InputEmail"class="form-label">Email address *</label>
+            <i class="far fa-envelope emailInput"></i>
+            <input type="email" class="form-control" id="InputEmail1">
+            </div>
+
+            <div class="mb-3 password ">
+              <label for="InputPassword" class="form-label">Password *</label>
+              <i class="fas fa-lock passwordInput"></i>
+              <input type="password" class="form-control" id="InputPassword1" placeholder="輸入密碼">
+            </div>
+
+            <div class="password">
+              <i class="fas fa-lock passwordCheck "></i>
+              <input type="password" class="form-control" id="InputPassword1" placeholder="確認密碼">
+              <a class="mb-5 login__form--forget-pwd pt-3" href="login.html">Already have an account</a>
+            </div>
+
+            <a class ="btn-signup text-center hvr-fade" href="#">Sign up</a>
+          </div>
+        </div>
+      </form>
+</section>

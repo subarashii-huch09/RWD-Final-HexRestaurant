@@ -1,0 +1,71 @@
+---
+title: Products
+layout: ./app/layout.ejs
+engine: ejs
+current: Products
+---
+
+<div class="product d-flex justify-content-center">
+  <aside class="sidebar">
+    <h2 class="sidebar__title"><i class="fas fa-leaf"></i>線上訂購美食</h2>
+    <ul class="sidebar__list">
+      <li class= "sidebar__list--item"><a class ="sidebar__link" href="#">全部 (23)</a></li>
+      <li class= "sidebar__list--item"><a class ="sidebar__link" href="#">只愛吃薯條 (18)</a></li>
+      <li class= "sidebar__list--item"><a class ="sidebar__link" href="#">加熱就可食 (1)</a></li>
+      <li class= "sidebar__list--item"><a class ="sidebar__link" href="#">不敗漢堡系列 (4)</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-products">
+    <div class="search d-flex justify-content-between">
+      <form action="product.html">
+            <input class ="search__input" type="search" name="search" id="search">
+            <button class="search__submit" type="submit"><i class="fas fa-search text-light"></i></button>
+      </form>
+      <div class="order d-flex">
+        <a href="#">結帳去</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i><span></span></a>
+      </div>
+    </div>
+
+    <ul class="product__list d-flex flex-wrap">
+      <li>
+        <a href="#" class =" heart"><i class="far fa-heart"></i></a>
+        <img src="./assets/images/product_1.png" alt="product_1">
+        <div class="popular-label"><p>熱銷美食</p></div>
+        <h3>經典漢堡套餐</h3>
+        <p>Classic Hamburger Package</p>
+        <span>$120 </span>
+        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+    </li>
+
+    <li>
+        <a href="#" class =" heart"><i class="far fa-heart"></i></a>
+        <img src="./assets/images/product_2.png" alt="product_2">
+        <h3>英俊香腸</h3>
+        <p>Handsome Sausage</p>
+        <span>$1,024 </span>
+        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+    </li>
+
+    <li>
+        <a href="#" class =" heart"><i class="far fa-heart"></i></a>
+        <img src="./assets/images/product_2.png" alt="product_2">
+        <h3>英俊香腸</h3>
+        <p>Handsome Sausage</p>
+        <span>$1,024 </span>
+        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+    </li>
+
+    <li>
+        <a href="#" class =" heart"><i class="far fa-heart"></i></a>
+        <img src="./assets/images/product_2.png" alt="product_2">
+        <h3>英俊香腸</h3>
+        <p>Handsome Sausage</p>
+        <span>$1,024 </span>
+        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+    </li>
+
+    </ul>
+  </main>
+</div>

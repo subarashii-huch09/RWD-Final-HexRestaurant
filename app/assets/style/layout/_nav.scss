@@ -1,0 +1,65 @@
+.nav {
+  background: rgba(0,0,0,0.75);
+  color: $light-color;
+  padding: 0px 42px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+
+  .logo {
+    @include img-replace-text ("../images/logo_w@svg.svg", 120px, 24px)
+  }
+
+  .nav__list--item {
+    &:hover{
+      background:whitesmoke;
+    }
+
+    a {
+      padding: 18px;
+      color: $light-color;
+      // display: inline-block;
+      &:hover {
+        color: #660000;
+      }
+    }
+  }
+  /*在PC上隱藏漢堡選單*/
+  .navBtn {
+    display: none;
+    color: $light-color;
+    padding: 16px 15px;
+    &:hover {
+      color:maroon;
+    }
+  }
+
+  .nav__list.active {
+    max-height: 300px;
+  }
+
+  @include mobile {
+    padding: 0 20px;
+
+    // 漢堡選單出現
+    .navBtn {
+      display: block;
+      float:right;
+    }
+    .nav__list {
+      max-height: 0px;
+      position: absolute;
+      z-index:100;
+      top:100%;
+      left: 0;
+      right: 0;
+      transition: max-height 0.8s;
+      overflow:hidden;
+      flex-direction:column;
+      background: rgba(0,0,0,0.75);
+      text-align: center;
+    }
+  }
+}
