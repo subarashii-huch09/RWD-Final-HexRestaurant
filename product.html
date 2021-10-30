@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv ="refresh" content = "45">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name ="keywords" content =" HTML, CSS, RWD,SCSS, HexSchool,六角西餐廳">
+  <meta name ="author" content ="Tansy Hu">
+  <meta name="description" content='六角西餐廳，咬一口就無法忘懷的漢堡'>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta property="og:title" content="六角西餐廳">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hexschool.com/">
+  <meta property="og:description" content="Hex Burger Restaurant 咬一口就無法忘懷的漢堡">
+  <meta property ="og:image" content="./assets/images/apple-touch-icon.png">
+  
+  <title>六角西餐廳</title>
+
+  <link rel="shortcut icon" href="./assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav d-flex justify-content-between align-items-center">
+      <h1><a class="logo" href="./index.html">六角西餐廳</a></h1>
+      <ul class="nav__list d-flex">
+        <li class ="nav__list--item hvr-bob hvr-underline-reveal"><a href="./product.html">菜單</a></li>
+        <li class ="nav__list--item hvr-bob hvr-underline-reveal"><a href="./index.html">特色</a></li>
+        <li class ="nav__list--item hvr-bob hvr-underline-reveal d-sm-none d-lg-block"><a href="./index.html">主廚</a></li>
+        <li class ="nav__list--item hvr-bob hvr-underline-reveal"><a href="./index.html">地圖</a></li>
+        <li class ="nav__list--item hvr-bob hvr-underline-reveal"><a href="./login.html">登入</a></li>
+        <li class ="nav__list--item hvr-bob hvr-underline-reveal d-sm-none d-lg-block"><a href="./signup.html">註冊</a></li>
+      </ul>
+      <a href="#" class="navBtn"><i class="fas fa-bars"></i></a>
+    </nav>
+
+    <div class="header-info">
+      <h2>咬一口就無法忘懷的漢堡</h2>
+      <p>七夕絕對無法錯過的好滋味 <br>
+        <i class="fas fa-utensils"></i>
+        六角大漢堡
+        <i class="fas fa-utensils"></i>
+      </p>
+    </div>
+
+  </header>
+
+  
+<div class="product d-flex justify-content-center">
+  <aside class="sidebar">
+    <h2 class="sidebar__title"><i class="fas fa-leaf"></i>線上訂購美食</h2>
+    <ul class="sidebar__list">
+      <li class= "sidebar__list--item"><a class ="sidebar__link" href="#">全部 (23)</a></li>
+      <li class= "sidebar__list--item"><a class ="sidebar__link" href="#">只愛吃薯條 (18)</a></li>
+      <li class= "sidebar__list--item"><a class ="sidebar__link" href="#">加熱就可食 (1)</a></li>
+      <li class= "sidebar__list--item"><a class ="sidebar__link" href="#">不敗漢堡系列 (4)</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-products">
+    <div class="search d-flex justify-content-between">
+      <form action="product.html">
+            <input class ="search__input" type="search" name="search" id="search">
+            <button class="search__submit" type="submit"><i class="fas fa-search text-light"></i></button>
+      </form>
+      <div class="order d-flex">
+        <a href="#">結帳去</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i><span></span></a>
+      </div>
+    </div>
+
+    <ul class="product__list d-flex flex-wrap">
+      <li>
+        <a href="#" class =" heart"><i class="far fa-heart"></i></a>
+        <img src="./assets/images/product_1.png" alt="product_1">
+        <div class="popular-label"><p>熱銷美食</p></div>
+        <h3>經典漢堡套餐</h3>
+        <p>Classic Hamburger Package</p>
+        <span>$120 </span>
+        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+    </li>
+
+    <li>
+        <a href="#" class =" heart"><i class="far fa-heart"></i></a>
+        <img src="./assets/images/product_2.png" alt="product_2">
+        <h3>英俊香腸</h3>
+        <p>Handsome Sausage</p>
+        <span>$1,024 </span>
+        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+    </li>
+
+    <li>
+        <a href="#" class =" heart"><i class="far fa-heart"></i></a>
+        <img src="./assets/images/product_2.png" alt="product_2">
+        <h3>英俊香腸</h3>
+        <p>Handsome Sausage</p>
+        <span>$1,024 </span>
+        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+    </li>
+
+    <li>
+        <a href="#" class =" heart"><i class="far fa-heart"></i></a>
+        <img src="./assets/images/product_2.png" alt="product_2">
+        <h3>英俊香腸</h3>
+        <p>Handsome Sausage</p>
+        <span>$1,024 </span>
+        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+    </li>
+
+    </ul>
+  </main>
+</div>
+
+
+  <footer class="footer">
+    <div class ="detailContainer d-flex justify-content-between align-items-center">
+    <div class="footer__detail d-flex ">
+      <div class="footer__detail--about d-none d-sm-block">
+      <h3 class="footer-title">關於 六角西餐廳</h3>
+      <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+    </div>
+      <div class="footer__detail--contact">
+      <h3 class ="footer-title">聯絡方式</h3>
+      <ul>
+        <li><a href="https://goo.gl/maps/u7CYPf2od55c4EWn9" target="_blank">高雄市中正五路到底</a></li>
+        <li><a href="tel:+886886886">+886 886 886</a></li>
+        <li><a href="mailto:service@hexschool.com">service@hexschool.com</a></li>
+      </ul>
+      </div>
+    </div>
+
+    <div class="footer-info d-flex">
+      <h2><a class="logo d-none d-sm-block" href="./index.html">六角西餐廳</a></h2>
+      <ul class ="social__list d-flex">
+        <li class= "social__list--item"><a class ="hvr-icon-grow"href="#"><i class="fab fa-google-plus-square fa-2x hvr-icon "></i></a></li>
+        <li class= "social__list--item"><a class="hvr-icon-grow" href="#"><i class="fab fa-twitter-square fa-2x hvr-icon "></i></a></li>
+        <li class= "social__list--item"><a class="hvr-icon-grow"href="#"><i class="fab fa-facebook-square fa-2x hvr-icon "></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+    <p class="copyright">Hex Restaurant 2022 &copy; All Rights Reserved</p>
+
+  </footer>
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a2505215bf.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/all.js"></script>
+
+</body>
+
+</html>
