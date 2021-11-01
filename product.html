@@ -70,53 +70,54 @@
   </aside>
 
   <main class="main-products">
-    <div class="search d-flex justify-content-between">
-      <form action="product.html">
+    <div class="search d-flex justify-content-between align-items-center">
+      <form class ="d-flex" action="product.html">
             <input class ="search__input" type="search" name="search" id="search">
             <button class="search__submit" type="submit"><i class="fas fa-search text-light"></i></button>
       </form>
-      <div class="order d-flex">
-        <a href="#">結帳去</a>
-        <a href="#"><i class="fas fa-shopping-cart"></i><span></span></a>
+      <div class="order d-flex justify-content-end align-items-center">
+        <a class ="order__check-out"href="#">結帳去</a>
+        <span class=" px-3"> | </span>
+        <a href="#"><i class="fas fa-shopping-cart fa-lg"></i><span class="order__num text-light text-center">3</span></a>
       </div>
     </div>
 
-    <ul class="product__list d-flex flex-wrap">
-      <li>
+    <ul class="d-flex justify-content-between flex-wrap pt-4">
+      <li class =" product__list text-center">
         <a href="#" class =" heart"><i class="far fa-heart"></i></a>
         <img src="./assets/images/product_1.png" alt="product_1">
-        <div class="popular-label"><p>熱銷美食</p></div>
-        <h3>經典漢堡套餐</h3>
+        <div class="popular__box"><p class="popular__box--label">熱銷美食</p></div>
+        <h3 class ="product__title">經典漢堡套餐</h3>
         <p>Classic Hamburger Package</p>
-        <span>$120 </span>
-        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+        <span class ="product__price">$120 </span>
+        <a class ="add-cart "href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
     </li>
 
-    <li>
+    <li class =" product__list text-center">
         <a href="#" class =" heart"><i class="far fa-heart"></i></a>
         <img src="./assets/images/product_2.png" alt="product_2">
-        <h3>英俊香腸</h3>
+        <h3 class ="product__title">英俊香腸</h3>
         <p>Handsome Sausage</p>
-        <span>$1,024 </span>
-        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+        <span class ="product__price">$1,024 </span>
+        <a class ="add-cart " href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
     </li>
 
-    <li>
+    <li class =" product__list text-center">
         <a href="#" class =" heart"><i class="far fa-heart"></i></a>
-        <img src="./assets/images/product_2.png" alt="product_2">
-        <h3>英俊香腸</h3>
-        <p>Handsome Sausage</p>
-        <span>$1,024 </span>
-        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+        <img src="./assets/images/product_3.png" alt="product_2">
+        <h3 class ="product__title">漢堡兄弟</h3>
+        <p>Hamburg Brothers</p>
+        <span class ="product__price">$792 </span>
+        <a class ="add-cart "href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
     </li>
 
-    <li>
+    <li class =" product__list text-center">
         <a href="#" class =" heart"><i class="far fa-heart"></i></a>
-        <img src="./assets/images/product_2.png" alt="product_2">
-        <h3>英俊香腸</h3>
-        <p>Handsome Sausage</p>
-        <span>$1,024 </span>
-        <a href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+        <img src="./assets/images/product_4.png" alt="product_2">
+        <h3 class ="product__title">完美願望</h3>
+        <p>Dragon Ball Package</p>
+        <span class ="product__price">$999,999 </span>
+        <a class ="add-cart " href="#"><i class="fas fa-shopping-cart"></i>加入購物車</a>
     </li>
 
     </ul>
