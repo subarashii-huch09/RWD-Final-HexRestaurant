@@ -285,6 +285,34 @@ img {
         margin: 0;
         font-size: 12px; } }
 
+.go-top {
+  width: 50px;
+  height: 50px;
+  background-color: #F56C23;
+  border-radius: 50%;
+  color: #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .go-top:hover {
+    background: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+  .go-top i {
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 15px; }
+    .go-top i:hover {
+      color: #3D1101; }
+  @media (max-width: 576px) {
+    .go-top {
+      display: none; } }
+
 .features {
   padding: 50px 30px;
   background-color: #F0E9E7;
