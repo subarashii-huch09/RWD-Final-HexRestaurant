@@ -143,3 +143,36 @@
 }
 
 
+.go-top {
+  width: 50px;
+  height: 50px;
+  background-color: $orange-color;
+  border-radius: 50%;
+  color: $light-color;
+  position:fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: all 0.5s;
+
+  &:hover {
+    background: $light-color;
+    transition: all 0.5s;
+  }
+
+  i {
+    font-size: $text-xl;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+
+  @include mobile {
+    display: none;
+  }
+}
+

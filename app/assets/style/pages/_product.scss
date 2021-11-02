@@ -3,39 +3,63 @@
   background-color: $secondary-color;
   color: $primary-color;
   
+  @include pc {
+    padding: 30px;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
   a {
     color: $primary-color;
   }
 
 
   .main-products {
-  width: 80%;
-  outline: 1px solid rgb(92, 172, 92);
+  width: 75%;
   padding-left: 15px;
+
+  @include tablet {
+    width: 95%;
+    padding-left: 0;
+  }
   }
 
 
 // sidebar begins
   .sidebar {
   line-height: 32px;
-  width: 20%;
-  outline: 1px solid blue;
+  width: 25%;
+  
+  @include tablet {
+    width: 95%;
+    margin-bottom: 25px;
+  }
 
-      &__title {
-      font-size: $text-lg;
-      margin-bottom: 20px;
+  
+  &__title {
+    font-size: $text-lg;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding-left: 5px;
       }
 
-      &__list {
-      width: 85%;
+  &__list {
+    width: 85%;
+    @include tablet {
+      width: 100%;
+      }
     
-      &--item {
-      border-bottom: 1px solid $primary-color;
+  &--item {
+    border-bottom: 1px solid $primary-color;
+
       }
     }
 
-      &__link {
-      padding-left: 10px;
+  &__link {
+    padding-left: 10px;
+
       &:hover {
       color: $light-color;
       background: $primary-color;
@@ -47,16 +71,35 @@
 
 // search begins
 .search {
+  margin-bottom: 15px;
+  @include mobile {
+    flex-wrap:wrap;
+  }
+
   form {
     width: 80%;
     height: 32px;
+    
+    
+    @include tablet {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+
     
     }
 
     &__input {
     width: 70%;
     border: 2px solid $primary-color;
-  
+    @include mobile {
+      width: 100%;
+      
+    }
     }
 
     &__submit {
@@ -68,6 +111,15 @@
   .order {
   width: 20%;
   position: relative;
+
+  @include pc {
+    width: 35%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
   &__check-out {
     padding: 5px;
     &:hover {
@@ -107,6 +159,9 @@
     width: 45%;
   }
 
+  @include mobile {
+    width: 100%;
+  }
   img {
     width: 100%;
     }
@@ -124,7 +179,7 @@
   }
   &__title { 
     padding: 12px 0;
-    // line-height: 28px;
+    line-height: 28px;
   }
 
   p {
