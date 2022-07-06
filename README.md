@@ -1,4 +1,3 @@
-作業範例
-https://hexschool.github.io/Rwd_sketch_export/#artboard6
-  - Local version: 4.0.2
-  - 
+[Design Brief](https://hexschool.github.io/Rwd_sketch_export/#artboard6)
+<br>
+[Demo](https://subarashii-huch09.github.io/RWD-Final-HexRestaurant)
